@@ -1,0 +1,31 @@
+body {
+    font-family: sans-serif;
+    padding-left: 33%;
+    padding-right: 33%;
+    padding-bottom: 33%;
+  }
+
+  label {
+    font-size: 17px;
+    display: block;
+    padding-bottom: 10px;
+    }
+
+  input, textarea {
+    display: block;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+
+  form {
+    background-color: #DAF7A6;
+    padding: 40px 40px 40px 40px;
+  }
+
+  #button-area {
+    float: left;
+    background-color: #;
+    width: 50%;
+    height: 50%;
+  }
