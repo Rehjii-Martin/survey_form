@@ -1,12 +1,97 @@
-<html>
+<!DOCTYPE html>
+<html lang="eng">
 
   <head>
-  </head>
+
+<style>
+
+
+  body {
+    font-family: sans-serif;
+    padding-left: 33%;
+    padding-right: 33%;
+    padding-bottom: 33%;
+  }
+
+    label {
+    font-size: 17px;
+    display: block;
+    padding-bottom: 10px;
+    }
+
+  input, textarea {
+    display: block;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+
+  form {
+    background-color: #DAF7A6;
+    padding: 40px 40px 40px 40px;
+  }
+
+  #button-area {
+    float: left;
+    background-color: #;
+    width: 50%;
+    height: 50%;
+  }
+
+
+
+</style>
+
+</head>
 
 
 
   <body>
-    <h1 id="Title">Survey Form</h1>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+      This is a survey where you can tell us about your favorite candy.
+    </p>
+    <form id="survey-form">
+      <label id="name-label"><em>Name:</em></label>
+      <input type="text" id="name" required placeholder="First Name"><br><br>
+
+      <label id="email-label"><em>E-mail:</em></label>
+      <input type="email" id="email" required placeholder="Best Email"><br><br>
+
+      <label id="number-label"><em>Number:</em></label>
+      <input type="number" id="number" min="1" max="100" required placeholder="$"><br><br>
+
+      <label id="dropdown"><em>Favorite Candy:</em></label>
+      <select id="dropdown">
+        <option value="skittles">Skittles</option>
+        <option value="starburst">Starburst</option>
+        <option value="m&ms">M&Ms</option>
+        <option value="poprocks">Poprocks</option>
+        <option value="other">Other</option>
+      </select><br><br>
+
+    <div id="button-area">
+      <label id="gender-label"><em>Gender:</em></label>
+      <input type="radio" class="radio-inline" name="gender" value="male">Male
+      <input type="radio" class="radio-inline" name="gender" value="female">Female<br>
+      <input type="radio" class="radio-inline" name="gender" value="other">Other<br>
+    </div>
+
+    <div id="button-area">
+      <label id="cavity-label"><em>Cavaties:</em></label>
+      <input type="checkbox" id="cavaties" value="cavaties">
+      <label for="cavaties"> I have 1 or more cavaties</label><br>
+      <input type="checkbox" id="cavaties" value="cavaties">
+      <label for="cavaties"> I have so many cavaties I can't count</label><br>
+      <input type="checkbox" id="cavaties" value="Nocavaties">
+      <label for="cavaties"> I don't have any cavaties</label><br><br>
+    </div>
+
+      <textarea placeholder="Additional Comments"></textarea><br>
+
+      <input type="submit" id="submit"><br>
+    </form>
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"> </script>
   </body>
 
 
